@@ -1,0 +1,39 @@
+experiences:
+
+
+- place: "NAVER AI Lab"
+  time: "Jan 2021 – now"
+  title: "Research Scientist"
+  subtitle: "Generation Research"
+  category: "work"
+
+- place: "NAVER AI Lab"
+  time: "Dec 2019 – Sep 2020"
+  title: "Research Scientist, Intern"
+  subtitle: "Generation Research"
+  category: "work"
+
+- place: "Seoul National University"
+  time: "Mar 2019 – Feb 2021"
+  title: "M.S. Student"
+  subtitle: "Computer Science and Engineering<br>Under the supervision of Prof. Sungjoo Yoo."
+  category: "school"
+
+
+- place: "JP Brothers"
+  time: "May 2017 – Nov 2017"
+  title: "Server Engineer"
+  subtitle: "Candy Camera (Installs 100,000,000+)"
+  category: "work"
+
+- place: "CodeWings"
+  time: "Dec 2015 – Mar 2017"
+  title: "CEO"
+  subtitle: "P2P video call service for programming education."
+  category: "work"
+
+- place: "Seoul National University"
+  time: "2013 - 2019"
+  title: "B.S. Student"
+  subtitle: "Computer Science and Engineering"
+  category: "school"
