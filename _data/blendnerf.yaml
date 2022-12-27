@@ -66,9 +66,6 @@ stylesdf:
   - id: "face_seed_14"
     dataset: stylesdf
     target: Face
-  - id: "nose_seed_4"
-    dataset: stylesdf
-    target: Nose
   - id: "eyebrows_seed_16"
     dataset: stylesdf
     target: Eyebrows
