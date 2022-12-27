@@ -189,3 +189,7 @@ video {
   -moz-transition: -moz-transform 0.2s;
   -o-transition: -o-transform 0.2s;
 } 
+
+.slider-pagination .slider-page {
+  box-shadow: 0 2px 5px #323232c2;
+}

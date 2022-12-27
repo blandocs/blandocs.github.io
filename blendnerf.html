@@ -156,8 +156,6 @@
 </section>
 
 
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -192,25 +190,75 @@
     <!--/ Paper video. -->
   </div>
 </section>
-<!-- <div class="columns is-centered has-text-centered">
-  <div class="column is-four-fifths">
-    <h2 class="title is-3">Abstract</h2>
-    <div class="content has-text-justified">
-      <p>
-        Image blending is a long-standing problem to naturally combine two images. While multiple works have been proposed to solve it, they severely underperform when input images are not well-aligned in terms of rotation, scale and translation. In this work, we propose a 3D-aware blending method for misaligned images using generative Neural Radiance Fields (NeRF). 
-      </p>
-      <p>
-        Our method consists of two stages: 3D-aware alignment and 3D-aware blending. For 3D-aware alignment, we first globally align the reference image by using the pretrained generative NeRF with the inversion method, and then locally align each part using the warping algorithm. To take advantage of 3D information for blending, we propose 3D-aware blending that directly blends images on the NeRF space. 
-      </p>
-      <p>
-        We demonstrate that our 3D-aware blending outperforms the competitive baselines validating with extensive quantitative and qualitative evaluations with FFHQ and AFHQ-Cat.
-      </p>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="is-centered has-text-centered">
+      <!-- Comparison. -->
+      <h2 class="title is-3">Comparison with Baselines</h2>
+      <img src="./blendnerf_static/images/diagram_comparison.png"/>
+      <div class="content has-text-justified">
+        <p>
+          Comparison with the existing blending methods. (a) Baseline. 2D blending methods compose two images without any 3D-aware alignment. (b) Baseline with 3D-aware alignment. To address misalignment, we apply our 3D-aware alignment method to existing 2D blending methods. (c) Proposed method. We propose 3D-aware blending after applying our 3D-aware alignment. Note that all methods do not use any 3D labels or 3D morphable models.
+      </div>
     </div>
   </div>
-</div> -->
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+      <!-- Alignment -->
+      <h2 class="title is-3 has-text-centered">3D-aware Alignment</h2>
+      
+      <div class="columns">
+        <!-- Visual Effects. -->
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-4">Global</h2>
+            <p style="padding-right: 10px;">
+              <i>Global alignment</i> is an essential part of the alignment. Rotation alone can make huge changes in the image space. In contrast to 2D GANs, generative NeRFs G can resolve this issue by novel-view synthesis.
+            </p>
+            <img src="./blendnerf_static/images/diagram_global_align.png"/>
+          </div>
+        </div>
+        <!--/ Visual Effects. -->
+  
+        <!-- Matting. -->
+        <div class="column">
+          <h2 class="title is-4">Local</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <p>
+                <i>Local alignment</i> is a fine-grained alignment between the target regions of the images. Even though we match the rotation of images, the scale and translation of target regions (e.g., face, eyes, etc.) can be different.
+              </p>
+              <img src="./blendnerf_static/images/diagram_local_align.png"/>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      <!--/ Matting. -->      
+
+    </div>
+  </div>
+</section>
 
 
-<section class="hero is-small" style="background: #f5f5f5;">
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="is-centered has-text-centered">
+      <!-- Comparison. -->
+      <h2 class="title is-3">3D-aware blending</h2>
+      <img src="./blendnerf_static/images/diagram_blending.png"/>
+      <div class="content has-text-justified">
+        <p>
+          Our 3D-aware blending pipeline. We aim to find the best latent code w<sub>edit</sub> that generates a well-blended image. To achieve this goal, we exploit both 2D pixel constraints (RGB value) and 3D supervision (volume density). Using the image-blending and density-blending losses, we optimize the latent code w<sub>edit</sub>.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
       <h2 class="title is-3">Multi-view blending results (EG3D-FFHQ)</h2>
@@ -257,7 +305,7 @@
   </div>
 </section>
 
-<section class="hero is-small" style="background: #edeeed;">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
       <h2 class="title is-3">Multi-view blending results (EG3D-AFHQv2)</h2>
@@ -305,7 +353,7 @@
 </section>
 
 
-<section class="hero is-small" style="background: #dbdbdb;">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
       <h2 class="title is-3">Multi-view blending results (StyleSDF)</h2>
