@@ -1,0 +1,74 @@
+celeba:
+  - id: "83_126_face"
+    dataset: celeba
+    target: Face
+  - id: "102_314_nose"
+    dataset: celeba
+    target: Nose
+  - id: "107_245_eyes"
+    dataset: celeba
+    target: Eyes
+  - id: "116_27_hair"
+    dataset: celeba
+    target: Hair
+  - id: "157_146_lip"
+    dataset: celeba
+    target: Lip    
+  - id: "157_146_face"
+    dataset: celeba
+    target: Face
+  - id: "157_146_nose"
+    dataset: celeba
+    target: Nose
+  - id: "157_146_eyes"
+    dataset: celeba
+    target: Eyes
+  - id: "157_146_hair"
+    dataset: celeba
+    target: Hair
+     
+afhq:
+  - id: "2_325_face"
+    dataset: afhq
+    target: Face
+  - id: "171_322_ears"
+    dataset: afhq
+    target: Ears
+  - id: "173_210_eyes"
+    dataset: afhq
+    target: Eyes
+  - id: "412_31_ears"
+    dataset: afhq
+    target: Ears
+  - id: "442_154_face"
+    dataset: afhq
+    target: Face
+  - id: "394_358_face"
+    dataset: afhq
+    target: Face
+  - id: "394_358_ears"
+    dataset: afhq
+    target: Ears
+  - id: "394_358_eyes"
+    dataset: afhq
+    target: Eyes  
+
+stylesdf:
+  - id: "eyes_seed_0"
+    dataset: stylesdf
+    target: Eyes
+  - id: "hair_seed_2"
+    dataset: stylesdf
+    target: Hair
+  - id: "lip_seed_8"
+    dataset: stylesdf
+    target: Lip
+  - id: "face_seed_14"
+    dataset: stylesdf
+    target: Face
+  - id: "nose_seed_4"
+    dataset: stylesdf
+    target: Nose
+  - id: "eyebrows_seed_16"
+    dataset: stylesdf
+    target: Eyebrows

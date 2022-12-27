@@ -1,0 +1,398 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="BlendNeRF. 3D-aware Blending with Generative NeRFs.">
+  <meta name="keywords" content="BlendNeRF, NeRF, Blending">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlendNeRF</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./blendnerf_static/css/bulma.min.css">
+  <link rel="stylesheet" href="./blendnerf_static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./blendnerf_static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./blendnerf_static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./blendnerf_static/css/index.css">
+  <link rel="icon" href="./blendnerf_static/images/NAVER_AI_Symbol_FullColor.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./blendnerf_static/js/fontawesome.all.min.js"></script>
+  <script src="./blendnerf_static/js/bulma-carousel.min.js"></script>
+  <script src="./blendnerf_static/js/bulma-slider.min.js"></script>
+  <script src="./blendnerf_static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://blandocs.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/blandocs/Tag2Pix">
+            Tag2Pix
+          </a>
+          <a class="navbar-item" href="https://github.com/naver-ai/StyleMapGAN">
+            StyleMapGAN
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">3D-aware Blending with Generative NeRFs</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a target="_blank" href="https://blandocs.github.io">Hyunsu Kim</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a target="_blank" href="https://sites.google.com/site/gylee1103">Gayoung Lee</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a target="_blank" href="https://yunjey.github.io">Yunjey Choi</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="http://wityworks.com">Jin-Hwa Kim</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a target="_blank" href="https://www.cs.cmu.edu/~junyanz">Jun-Yan Zhu</a><sup>3</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>NAVER AI Lab,</span>
+            <span class="author-block"><sup>2</sup>SNU AIIS,</span>
+            <span class="author-block"><sup>3</sup>CMU</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a target="_blank" href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (High res)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a target="_blank" href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a target="_blank" href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a target="_blank" href="https://github.com/naver-ai/BlendNeRF"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <img src="./blendnerf_static/images/teaser.png"/>
+
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">BlendNeRF</span> can align and compose unaligned images without manual effort.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Image blending is a long-standing problem to naturally combine two images. While multiple works have been proposed to solve it, they severely underperform when input images are not well-aligned in terms of rotation, scale and translation. In this work, we propose a 3D-aware blending method for misaligned images using generative Neural Radiance Fields (NeRF). 
+          </p>
+          <p>
+            Our method consists of two stages: 3D-aware alignment and 3D-aware blending. For 3D-aware alignment, we first globally align the reference image by using the pretrained generative NeRF with the inversion method, and then locally align each part using the warping algorithm. To take advantage of 3D information for blending, we propose 3D-aware blending that directly blends images on the NeRF space. 
+          </p>
+          <p>
+            We demonstrate that our 3D-aware blending outperforms the competitive baselines validating with extensive quantitative and qualitative evaluations with FFHQ and AFHQ-Cat.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+<!-- <div class="columns is-centered has-text-centered">
+  <div class="column is-four-fifths">
+    <h2 class="title is-3">Abstract</h2>
+    <div class="content has-text-justified">
+      <p>
+        Image blending is a long-standing problem to naturally combine two images. While multiple works have been proposed to solve it, they severely underperform when input images are not well-aligned in terms of rotation, scale and translation. In this work, we propose a 3D-aware blending method for misaligned images using generative Neural Radiance Fields (NeRF). 
+      </p>
+      <p>
+        Our method consists of two stages: 3D-aware alignment and 3D-aware blending. For 3D-aware alignment, we first globally align the reference image by using the pretrained generative NeRF with the inversion method, and then locally align each part using the warping algorithm. To take advantage of 3D information for blending, we propose 3D-aware blending that directly blends images on the NeRF space. 
+      </p>
+      <p>
+        We demonstrate that our 3D-aware blending outperforms the competitive baselines validating with extensive quantitative and qualitative evaluations with FFHQ and AFHQ-Cat.
+      </p>
+    </div>
+  </div>
+</div> -->
+
+
+<section class="hero is-small" style="background: #f5f5f5;">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Multi-view blending results (EG3D-FFHQ)</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        {% for obj in site.data.blendnerf.celeba %}
+        <div class="item item-{{ obj.id }}">
+          <div class="columns vertical_center">
+            <div class="column is-two-fifths">
+              <div class="columns">
+                <div class="column">
+                  <figure>
+                    <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/original_w_mask.png"/>
+                    <figcaption>Original image</figcaption>
+                  </figure>
+                  
+                </div>
+                <div class="column">
+                  <figure>
+                    <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/reference_w_mask.png"/>
+                    <figcaption>Reference image</figcaption>
+                  </figure>                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="column is-three-fifths" style="margin-bottom: 30px;">
+              <figure>
+                <video poster="" id="{{ obj.dataset }}_{{ obj.id }}" autoplay controls muted loop playsinline height="100%">
+                  <source src="./blendnerf_static/videos/{{ obj.dataset }}/{{ obj.id }}.mp4"
+                          type="video/mp4">
+                </video>
+                  <div class="columns">
+                    <figcaption class="column is-one-third">Original (recon.)</figcaption>
+                    <figcaption class="column is-one-third">Reference (recon.)</figcaption>
+                    <figcaption class="column is-one-third">Blend <b>{{ obj.target }}</b></figcaption>
+                  </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small" style="background: #edeeed;">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Multi-view blending results (EG3D-AFHQv2)</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        {% for obj in site.data.blendnerf.afhq %}
+        <div class="item item-{{ obj.id }}">
+          <div class="columns vertical_center">
+            <div class="column is-two-fifths">
+              <div class="columns">
+                <div class="column">
+                  <figure>
+                    <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/original_w_mask.png"/>
+                    <figcaption>Original image</figcaption>
+                  </figure>
+                  
+                </div>
+                <div class="column">
+                  <figure>
+                    <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/reference_w_mask.png"/>
+                    <figcaption>Reference image</figcaption>
+                  </figure>                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="column is-three-fifths" style="margin-bottom: 30px;">
+              <figure>
+                <video poster="" id="{{ obj.dataset }}_{{ obj.id }}" autoplay controls muted loop playsinline height="100%">
+                  <source src="./blendnerf_static/videos/{{ obj.dataset }}/{{ obj.id }}.mp4"
+                          type="video/mp4">
+                </video>
+                  <div class="columns">
+                    <figcaption class="column is-one-third">Original (recon.)</figcaption>
+                    <figcaption class="column is-one-third">Reference (recon.)</figcaption>
+                    <figcaption class="column is-one-third">Blend <b>{{ obj.target }}</b></figcaption>
+                  </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small" style="background: #edeeed;">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Multi-view blending results (StyleSDF)</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        {% for obj in site.data.blendnerf.stylesdf %}
+        <div class="item item-{{ obj.id }}">
+          <div class="columns vertical_center">
+            <div class="column is-two-fifths">
+              <div class="columns">
+                <div class="column">
+                  <figure>
+                    <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/original_w_mask.png"/>
+                    <figcaption>Original image</figcaption>
+                  </figure>
+                  
+                </div>
+                <div class="column">
+                  <figure>
+                    <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/reference_w_mask.png"/>
+                    <figcaption>Reference image</figcaption>
+                  </figure>                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="column is-three-fifths" style="margin-bottom: 30px;">
+              <figure>
+                <video poster="" id="{{ obj.dataset }}_{{ obj.id }}" autoplay controls muted loop playsinline height="100%">
+                  <source src="./blendnerf_static/videos/{{ obj.dataset }}/{{ obj.id }}.mp4"
+                          type="video/mp4">
+                </video>
+                  <div class="columns">
+                    <figcaption class="column is-one-third">Original (recon.)</figcaption>
+                    <figcaption class="column is-one-third">Reference (recon.)</figcaption>
+                    <figcaption class="column is-one-third">Blend <b>{{ obj.target }}</b></figcaption>
+                  </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{???,
+      title={3D-aware Blending with Generative NeRFs},
+      author={Kim, Hyunsu and Lee, Gayoung and Choi, Yunjey and Kim, Jin-Hwa and Zhu, Jun-Yan},
+      journal={arXiv preprint arXiv:???},
+      year={202??}
+    }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a target="_blank" class="icon-link"
+         href="blendnerf_static/paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a target="_blank" class="icon-link" href="https://blandocs.github.io" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">????????? Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website refers to <a target="_blank" href="https://nerfies.github.io/">Nerfies website</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
