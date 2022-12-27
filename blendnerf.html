@@ -146,8 +146,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
 
-      <img src="./blendnerf_static/images/teaser.png"/>
-
+      <img src="./blendnerf_static/images/teaser.png" style="padding: 0 62px;"/>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">BlendNeRF</span> can align and compose unaligned images without manual effort.
       </h2>
@@ -248,7 +247,7 @@
   <div class="container is-max-desktop">
     <div class="is-centered has-text-centered">
       <!-- Comparison. -->
-      <h2 class="title is-3">3D-aware blending</h2>
+      <h2 class="title is-3">3D-aware Blending</h2>
       <img src="./blendnerf_static/images/diagram_blending.png"/>
       <div class="content has-text-justified">
         <p>
@@ -261,7 +260,8 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h2 class="title is-3">Multi-view blending results (EG3D-FFHQ)</h2>
+      <h2 class="title is-3">Multi-view Blending Results</h2>
+      <h2 class="title is-4">EG3D FFHQ</h2>
       <div id="results-carousel" class="carousel results-carousel">
         {% for obj in site.data.blendnerf.celeba %}
         <div class="item item-{{ obj.id }}">
@@ -308,7 +308,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h2 class="title is-3">Multi-view blending results (EG3D-AFHQv2)</h2>
+      <h2 class="title is-4">EG3D AFHQv2-Cat</h2>
       <div id="results-carousel" class="carousel results-carousel">
         {% for obj in site.data.blendnerf.afhq %}
         <div class="item item-{{ obj.id }}">
@@ -356,7 +356,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h2 class="title is-3">Multi-view blending results (StyleSDF)</h2>
+      <h2 class="title is-4">StyleSDF FFHQ</h2>
       <div id="results-carousel" class="carousel results-carousel">
         {% for obj in site.data.blendnerf.stylesdf %}
         <div class="item item-{{ obj.id }}">
