@@ -163,13 +163,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Image blending is a long-standing problem to naturally combine two images. While multiple works have been proposed to solve it, they severely underperform when input images are not well-aligned in terms of rotation, scale and translation. In this work, we propose a 3D-aware blending method for misaligned images using generative Neural Radiance Fields (NeRF). 
+            Image blending aims to combine multiple images seamlessly. It remains challenging as input images are often captured by different cameras under various lighting conditions. Existing 2D-based methods struggle when input images are misaligned due to differences in 3D camera poses and object shapes. 
           </p>
           <p>
-            Our method consists of two stages: 3D-aware alignment and 3D-aware blending. For 3D-aware alignment, we first globally align the reference image by using the pretrained generative NeRF with the inversion method, and then locally align each part using the warping algorithm. To take advantage of 3D information for blending, we propose 3D-aware blending that directly blends images on the NeRF space. 
+            To address the above issues, we propose a 3D-aware blending method using generative Neural Radiance Fields (NeRF), including two key components: 3D-aware alignment and 3D-aware blending. For 3D-aware alignment, we align the reference image globally by changing the camera pose of the generative NeRF and then locally align each part using a 3D transformation matrix. To further leverage 3D information of objects, we propose 3D-aware blending that directly blends images on the generative NeRF's latent representation space, rather than raw pixel space. 
           </p>
           <p>
-            We demonstrate that our 3D-aware blending outperforms the competitive baselines validating with extensive quantitative and qualitative evaluations with FFHQ and AFHQ-Cat.
+            Collectively, our 3D-aware blending method outperforms existing 2D baselines, as validated by extensive quantitative and qualitative evaluations with FFHQ and AFHQ-Cat.
           </p>
         </div>
       </div>
