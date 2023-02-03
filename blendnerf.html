@@ -148,7 +148,8 @@
 
       <img src="./blendnerf_static/images/teaser.png"/>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">BlendNeRF</span> can align and compose unaligned images without manual effort.
+        <span class="dnerf">BlendNeRF</span> automatically aligns and composes two images,
+        <br>even for images with different camera poses and object shapes.
       </h2>
     </div>
   </div>
@@ -273,14 +274,10 @@
                     <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/original_w_mask.png"/>
                     <figcaption>Original image</figcaption>
                   </figure>
-                  
-                </div>
-                <div class="column">
                   <figure>
                     <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/reference_w_mask.png"/>
                     <figcaption>Reference image</figcaption>
-                  </figure>                  
-                  
+                  </figure>                    
                 </div>
               </div>
             </div>
@@ -291,9 +288,9 @@
                           type="video/mp4">
                 </video>
                   <div class="columns">
-                    <figcaption class="column is-one-third">Original (recon.)</figcaption>
-                    <figcaption class="column is-one-third">Reference (recon.)</figcaption>
-                    <figcaption class="column is-one-third">Blend <b>{{ obj.target }}</b></figcaption>
+                    <figcaption class="is-one-third">Original (recon.)</figcaption>
+                    <figcaption class="is-one-third">Reference (recon.)</figcaption>
+                    <figcaption class="is-one-third">Blend <b>{{ obj.target }}</b></figcaption>
                   </div>
               </figure>
             </div>
@@ -320,9 +317,6 @@
                     <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/original_w_mask.png"/>
                     <figcaption>Original image</figcaption>
                   </figure>
-                  
-                </div>
-                <div class="column">
                   <figure>
                     <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/reference_w_mask.png"/>
                     <figcaption>Reference image</figcaption>
@@ -338,9 +332,9 @@
                           type="video/mp4">
                 </video>
                   <div class="columns">
-                    <figcaption class="column is-one-third">Original (recon.)</figcaption>
-                    <figcaption class="column is-one-third">Reference (recon.)</figcaption>
-                    <figcaption class="column is-one-third">Blend <b>{{ obj.target }}</b></figcaption>
+                    <figcaption class="is-one-third">Original (recon.)</figcaption>
+                    <figcaption class="is-one-third">Reference (recon.)</figcaption>
+                    <figcaption class="is-one-third">Blend <b>{{ obj.target }}</b></figcaption>
                   </div>
               </figure>
             </div>
@@ -368,9 +362,6 @@
                     <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/original_w_mask.png"/>
                     <figcaption>Original image</figcaption>
                   </figure>
-                  
-                </div>
-                <div class="column">
                   <figure>
                     <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/reference_w_mask.png"/>
                     <figcaption>Reference image</figcaption>
@@ -386,9 +377,9 @@
                           type="video/mp4">
                 </video>
                   <div class="columns">
-                    <figcaption class="column is-one-third">Original (recon.)</figcaption>
-                    <figcaption class="column is-one-third">Reference (recon.)</figcaption>
-                    <figcaption class="column is-one-third">Blend <b>{{ obj.target }}</b></figcaption>
+                    <figcaption class="is-one-third">Original (recon.)</figcaption>
+                    <figcaption class="is-one-third">Reference (recon.)</figcaption>
+                    <figcaption class="is-one-third">Blend <b>{{ obj.target }}</b></figcaption>
                   </div>
               </figure>
             </div>
@@ -430,7 +421,7 @@
         <div class="content">
           <p>
             This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">????????? Creative
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>

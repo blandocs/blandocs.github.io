@@ -160,6 +160,22 @@ body {
   align-items : center;
 }
 
+.is-two-fifths figure{
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
+}
+     
+.is-three-fifths figure figcaption{
+  width: 33.3%;
+  float: left;  
+  /* padding: 10px 0; */
+}
+.columns {
+  padding: 0.75rem;
+}
+
+
 figcaption {
   color: #16c35f;
 }
