@@ -123,10 +123,10 @@
                   <span>Video</span>
                 </a>
               </span> -->
-              <!-- Code Link. -->
+              <!-- Code Link. href="https://github.com/naver-ai/BlendNeRF" --> 
               <span class="link-block">
-                <a target="_blank" href="https://github.com/naver-ai/BlendNeRF"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a target="_blank" onClick="alert('Coming soon!')"
+                   class="external-link button is-normal is-rounded is-dark"> 
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
@@ -164,13 +164,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Image blending aims to combine multiple images seamlessly. It remains challenging as input images are often captured by different cameras under various lighting conditions. Existing 2D-based methods struggle when input images are misaligned due to differences in 3D camera poses and object shapes. 
+            Image blending aims to combine multiple images seamlessly. It remains challenging for existing 2D-based methods, especially when input images are misaligned due to differences in 3D camera poses and object shapes. 
           </p>
           <p>
-            To address the above issues, we propose a 3D-aware blending method using generative Neural Radiance Fields (NeRF), including two key components: 3D-aware alignment and 3D-aware blending. For 3D-aware alignment, we align the reference image globally by changing the camera pose of the generative NeRF and then locally align each part using a 3D transformation matrix. To further leverage 3D information of objects, we propose 3D-aware blending that directly blends images on the generative NeRF's latent representation space, rather than raw pixel space. 
+            To tackle these issues, we propose a 3D-aware blending method using generative Neural Radiance Fields (NeRF), including two key components: 3D-aware alignment and 3D-aware blending. 
+            For 3D-aware alignment, we first estimate the camera pose of the reference image with respect to generative NeRFs and then perform 3D local alignment for each part. 
+            To further leverage 3D information of the generative NeRF, we propose 3D-aware blending that directly blends images on the NeRF's latent representation space, rather than raw pixel space. 
+
           </p>
           <p>
-            Collectively, our 3D-aware blending method outperforms existing 2D baselines, as validated by extensive quantitative and qualitative evaluations with FFHQ and AFHQ-Cat.
+            Collectively, our method outperforms existing 2D baselines, as validated by extensive quantitative and qualitative evaluations with FFHQ and AFHQ-Cat. 
           </p>
         </div>
       </div>
