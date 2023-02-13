@@ -3,20 +3,20 @@ papers:
 
   - title: "3D-aware Blending with Generative NeRFs"
     authors: "<b>Hyunsu Kim</b>, Gayoung Lee, Yunjey Choi, Jin-Hwa Kim, Jun-Yan Zhu"
-    venue: "under review"
+    venue: "arXiv, 2023"
     # paper_pdf: "https://arxiv.org/abs/"
     project: "https://blandocs.github.io/blendnerf"
     image: "/assets/publications/2023_BlendNeRF/thumb.png"
 
   - title: "BallGAN: 3D-aware Image Synthesis with a Spherical Background"
     authors: "Minjung Shin, Yunji Seo, Jeongmin Bae, Young Sun Choi, <b>Hyunsu Kim</b>, Hyeran Byun, Youngjung Uh"
-    venue: "under review"
+    venue: "arXiv, 2023"
     paper_pdf: "https://arxiv.org/abs/2301.09091"
     image: "/assets/publications/2023_BallGAN/thumb.png"
 
   - title: "Diffusion Video Autoencoders: Toward Temporally Consistent Face Video Editing via Disentangled Video Encoding"
     authors: "Gyeongman Kim, Hajin Shim, <b>Hyunsu Kim</b>, Yunjey Choi, Junho Kim, Eunho Yang"
-    venue: "under review"
+    venue: "arXiv, 2022"
     paper_pdf: "https://arxiv.org/abs/2212.02802"
     image: "/assets/publications/2023_VideoDAE/thumb.png"
 

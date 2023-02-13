@@ -1,4 +1,5 @@
 ---
+title: BlendNeRF
 ---
 <!DOCTYPE html>
 <html>
@@ -203,7 +204,7 @@
       <img src="./blendnerf_static/images/diagram_comparison.png"/>
       <div class="content has-text-justified">
         <p>
-          Comparison with the existing blending methods. (a) Baseline. 2D blending methods compose two images without any 3D-aware alignment. (b) Baseline with 3D-aware alignment. To address misalignment, we apply our 3D-aware alignment method to existing 2D blending methods. (c) Proposed method. We propose 3D-aware blending after applying our 3D-aware alignment. Note that all methods do not use any 3D labels or 3D morphable models.
+          Comparison with the existing blending methods. Red lines denote target blending parts. (a) <b>2D blending</b>. 2D blending methods compose two images without any 3D-aware alignment. (b) <b>2D blending with 3D-aware alignment</b>. To address misalignment, we apply our 3D-aware alignment method to existing 2D blending methods. (c) <b>Proposed method</b>. We propose 3D-aware blending after applying our 3D-aware alignment. Note that all methods do not use 3D labels or 3D morphable models.
       </div>
     </div>
   </div>
@@ -218,31 +219,25 @@
         <div class="column">
           <div class="content">
             <h2 class="title is-4">Global</h2>
-            <p style="padding-right: 10px;">
-              <i>Global alignment</i> is an essential part of the alignment. Rotation alone can make huge changes in the image space. In contrast to 2D GANs, generative NeRFs G can resolve this issue by novel-view synthesis.
+            <p>
+              <b>Global alignment</b> is an essential part of our blending method, as slight misalignment of two images in terms of rotation can make immense degradation in blending quality. In contrast to 2D GANs, generative NeRFs <i>G</i> can resolve this issue by novel-view synthesis.
             </p>
-            <img src="./blendnerf_static/images/diagram_global_align.png"/>
+            <img src="./blendnerf_static/images/diagram_global_align.png" style="margin-top: 20px;"/>
           </div>
         </div>
         <!--/ Visual Effects. -->
   
         <!-- Matting. -->
         <div class="column">
-          <h2 class="title is-4">Local</h2>
-          <div class="columns is-centered">
-            <div class="column content">
+          <div class="content">
+            <h2 class="title is-4">Local</h2>
               <p>
-                <i>Local alignment</i> is a fine-grained alignment between the target regions of the images. Even though we match the rotation of images, the scale and translation of target regions (e.g., face, eyes, etc.) can be different.
+                <b>Local alignment</b> is a fine-grained alignment between the target regions of two images. Even though we have matched two images through global rotation, the scale and translation of target regions (<i>e.g.</i>, face, eyes, ears, <i>etc</i>.) need to be further aligned, as the location and size of each object parts differ across two object instances.
               </p>
               <img src="./blendnerf_static/images/diagram_local_align.png"/>
-            </div>
-  
           </div>
         </div>
-      </div>
-      <!--/ Matting. -->      
-
-    </div>
+      </div>     
   </div>
 </section>
 
@@ -255,7 +250,8 @@
       <img src="./blendnerf_static/images/diagram_blending.png"/>
       <div class="content has-text-justified">
         <p>
-          Our 3D-aware blending pipeline. We aim to find the best latent code w<sub>edit</sub> that generates a well-blended image. To achieve this goal, we exploit both 2D pixel constraints (RGB value) and 3D supervision (volume density). Using the image-blending and density-blending losses, we optimize the latent code w<sub>edit</sub>.
+
+          We aim to find the best latent code w<sub>edit</sub> to synthesize a seamless and natural output. To achieve this goal, we exploit both 2D pixel constraints (RGB value) and 3D geometric constraints (volume density). With the proposed image-blending and density-blending losses, we optimize the latent code w<sub>edit</sub>.
       </div>
     </div>
   </div>
@@ -430,11 +426,13 @@
           <p>
             This website refers to <a target="_blank" href="https://nerfies.github.io/">Nerfies website</a>.
           </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
+  <!-- Google Analytics -->
+  {% include google_analytics.html %}
 </body>
 </html>
