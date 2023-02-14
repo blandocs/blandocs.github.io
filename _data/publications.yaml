@@ -4,7 +4,7 @@ papers:
   - title: "3D-aware Blending with Generative NeRFs"
     authors: "<b>Hyunsu Kim</b>, Gayoung Lee, Yunjey Choi, Jin-Hwa Kim, Jun-Yan Zhu"
     venue: "arXiv, 2023"
-    # paper_pdf: "https://arxiv.org/abs/"
+    paper_pdf: "https://arxiv.org/abs/2302.06608"
     project: "https://blandocs.github.io/blendnerf"
     image: "/assets/publications/2023_BlendNeRF/thumb.png"
 
@@ -34,7 +34,7 @@ papers:
     image: "/assets/publications/2022_GGDR/thumb.png"
 
   - title: "Generating videos with dynamics-aware implicit generative adversarial networks"
-    authors: "Sihyun Yu, Jihoon Tack, Sangwoo Mo, <b>Hyunsu Kim</b>, Junho Kim, Jung-Woo Ha, Jinwoo Shin"
+    authors: "Sihyun Yu<sup>‡</sup>, Jihoon Tack<sup>‡</sup>, Sangwoo Mo<sup>‡</sup>, <b>Hyunsu Kim</b>, Junho Kim, Jung-Woo Ha, Jinwoo Shin"
     venue: "ICLR 2022"
     paper_pdf: "/assets/publications/2022_DIGAN/paper.pdf"
     code: "https://github.com/sihyun-yu/digan"
