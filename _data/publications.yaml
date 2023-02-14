@@ -4,7 +4,8 @@ papers:
   - title: "3D-aware Blending with Generative NeRFs"
     authors: "<b>Hyunsu Kim</b>, Gayoung Lee, Yunjey Choi, Jin-Hwa Kim, Jun-Yan Zhu"
     venue: "arXiv, 2023"
-    paper_pdf: "https://arxiv.org/abs/2302.06608"
+    paper_pdf: "/assets/publications/2023_BlendNeRF/paper.pdf"
+    code: "https://github.com/naver-ai/blendnerf"
     project: "https://blandocs.github.io/blendnerf"
     image: "/assets/publications/2023_BlendNeRF/thumb.png"
 
