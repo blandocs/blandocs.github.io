@@ -343,6 +343,49 @@ title: BlendNeRF
   </div>
 </section>
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-4">EG3D ShapeNet-Car</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        {% for obj in site.data.blendnerf.shapenet %}
+        <div class="item item-{{ obj.id }}">
+          <div class="columns vertical_center">
+            <div class="column is-two-fifths">
+              <div class="columns">
+                <div class="column">
+                  <figure>
+                    <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/original_w_mask.png"/>
+                    <figcaption>Original image</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="./blendnerf_static/images/{{ obj.dataset }}/{{ obj.id }}/reference_w_mask.png"/>
+                    <figcaption>Reference image</figcaption>
+                  </figure>                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="column is-three-fifths" style="margin-bottom: 30px;">
+              <figure>
+                <video poster="" id="{{ obj.dataset }}_{{ obj.id }}" autoplay controls muted loop playsinline height="100%">
+                  <source src="./blendnerf_static/videos/{{ obj.dataset }}/{{ obj.id }}.mp4"
+                          type="video/mp4">
+                </video>
+                  <div class="columns">
+                    <figcaption class="is-one-third">Original</figcaption>
+                    <figcaption class="is-one-third">Reference</figcaption>
+                    <figcaption class="is-one-third">Blend <b>{{ obj.target }}</b></figcaption>
+                  </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="hero is-small">
   <div class="hero-body">

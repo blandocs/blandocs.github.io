@@ -53,6 +53,27 @@ afhq:
     dataset: afhq
     target: Eyes  
 
+shapenet:
+  - id: "41_44"
+    dataset: shapenet
+    target: Front
+  - id: "89_97"
+    dataset: shapenet
+    target: Wheels    
+  - id: "1_7"
+    dataset: shapenet
+    target: Front       
+  - id: "33_66"
+    dataset: shapenet
+    target: Top
+  - id: "73_87"
+    dataset: shapenet
+    target: Front 
+  - id: "72_82"
+    dataset: shapenet
+    target: Front
+
+
 stylesdf:
   - id: "eyes_seed_0"
     dataset: stylesdf
