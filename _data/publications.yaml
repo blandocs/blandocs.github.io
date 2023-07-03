@@ -1,6 +1,5 @@
 papers:
 
-
   - title: "3D-aware Blending with Generative NeRFs"
     authors: "<b>Hyunsu Kim</b>, Gayoung Lee, Yunjey Choi, Jin-Hwa Kim, Jun-Yan Zhu"
     venue: "arXiv, 2023"
@@ -15,11 +14,30 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2301.09091"
     image: "/assets/publications/2023_BallGAN/thumb.png"
 
+  - title: "Diffusion Models with Grouped Latents for Interpretable Latent Space"
+    authors: "Sangyun Lee, Gayoung Lee, <b>Hyunsu Kim</b>, Junho Kim, Youngjung Uh"
+    venue: "ICMLW, 2023"
+    image: "/assets/publications/2023_DMGL/thumb.png"
+
+  - title: "User-friendly Image Editing with Minimal Text Input: Leveraging Captioning and Injection Techniques"
+    authors: "Sunwoo Kim, Wooseok Jang, <b>Hyunsu Kim</b>, Junho Kim, Yunjey Choi, Seungryong Kim, Gayeong Lee"
+    venue: "arXiv, 2023"
+    paper_pdf: "https://arxiv.org/abs/2306.02717"
+    image: "/assets/publications/2023_UIEM/thumb.png"
+
   - title: "Diffusion Video Autoencoders: Toward Temporally Consistent Face Video Editing via Disentangled Video Encoding"
     authors: "Gyeongman Kim, Hajin Shim, <b>Hyunsu Kim</b>, Yunjey Choi, Junho Kim, Eunho Yang"
-    venue: "arXiv, 2022"
+    venue: "CVPR, 2023"
     paper_pdf: "https://arxiv.org/abs/2212.02802"
+    code: "https://github.com/man805/Diffusion-Video-Autoencoders"
     image: "/assets/publications/2023_VideoDAE/thumb.png"
+    project: "https://diff-video-ae.github.io/"
+  
+  - title: "Context-Preserving Two-Stage Video Domain Translation for Portrait Stylization"
+    authors: "Doyeon Kim, Eunji Ko, <b>Hyunsu Kim</b>, Yunji Kim, Junho Kim, Dongchan Min, Junmo Kim, Sung Ju Hwang"
+    venue: "CVPRW, 2023"
+    paper_pdf: "https://arxiv.org/abs/2305.19135"
+    image: "/assets/publications/2023_CPDT/thumb.png"
 
   - title: "Learning Input-agnostic Manipulation Directions in StyleGAN with Text Guidance"
     authors: "Yoonjeon Kim, <b>Hyunsu Kim</b>, Junho Kim, Yunjey Choi, Eunho Yang"
