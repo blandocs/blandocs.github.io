@@ -70,7 +70,9 @@ title: BlendNeRF
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">3D-aware Blending with Generative NeRFs</h1>
+          <h1 class="title is-1 publication-title">BlendNeRF</h1>
+          <h1 class="title is-4 publication-title">3D-aware Blending with Generative NeRFs</h1>
+          <h1 class="title is-4 publication-title">ICCV 2023</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a target="_blank" href="https://blandocs.github.io">Hyunsu Kim</a><sup>1</sup>,</span>
@@ -368,7 +370,7 @@ title: BlendNeRF
             </div>
             <div class="column is-three-fifths" style="margin-bottom: 30px;">
               <figure>
-                <video poster="" id="{{ obj.dataset }}_{{ obj.id }}" autoplay controls muted loop playsinline height="100%">
+                <video class="shapenet-car-video" poster="" id="{{ obj.dataset }}_{{ obj.id }}" autoplay controls muted loop playsinline height="100%">
                   <source src="./blendnerf_static/videos/{{ obj.dataset }}/{{ obj.id }}.mp4"
                           type="video/mp4">
                 </video>
@@ -417,8 +419,8 @@ title: BlendNeRF
                           type="video/mp4">
                 </video>
                   <div class="columns">
-                    <figcaption class="is-one-third">Original (recon.)</figcaption>
-                    <figcaption class="is-one-third">Reference (recon.)</figcaption>
+                    <figcaption class="is-one-third">Original</figcaption>
+                    <figcaption class="is-one-third">Reference</figcaption>
                     <figcaption class="is-one-third">Blend <b>{{ obj.target }}</b></figcaption>
                   </div>
               </figure>
@@ -435,12 +437,13 @@ title: BlendNeRF
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{kim20233daware,
+    <pre><code>@inproceedings{kim20233daware,
       title={3D-aware Blending with Generative NeRFs}, 
       author={Hyunsu Kim and Gayoung Lee and Yunjey Choi and Jin-Hwa Kim and Jun-Yan Zhu},
-      journal={arXiv preprint arXiv:2302.06608},
+      booktitle={ICCV},
       year={2023}
-    }</code></pre>
+    }
+  </code></pre>
   </div>
 </section>
 
