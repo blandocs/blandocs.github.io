@@ -20,6 +20,7 @@ papers:
   - title: "Diffusion Models with Grouped Latents for Interpretable Latent Space"
     authors: "Sangyun Lee, Gayoung Lee, <b>Hyunsu Kim</b>, Junho Kim, Youngjung Uh"
     venue: "ICMLW, 2023"
+    paper_pdf: "https://icml.cc/virtual/2023/28120"
     image: "/assets/publications/2023_DMGL/thumb.png"
 
   - title: "User-friendly Image Editing with Minimal Text Input: Leveraging Captioning and Injection Techniques"
@@ -45,7 +46,8 @@ papers:
   - title: "Learning Input-agnostic Manipulation Directions in StyleGAN with Text Guidance"
     authors: "Yoonjeon Kim, <b>Hyunsu Kim</b>, Junho Kim, Yunjey Choi, Eunho Yang"
     venue: "ICLR 2023"
-    # paper_pdf: ""
+    paper_pdf: "https://arxiv.org/abs/2302.13331"
+    code: "https://github.com/akatigre/multi2one"
     image: "/assets/publications/2023_multi2one/thumb.png"
 
   - title: "Generator Knows What Discriminator Should Learn in Unconditional GANs"
