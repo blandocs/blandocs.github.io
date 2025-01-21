@@ -6,8 +6,8 @@ title: Home
 <div class="docs-section" id="bio">
   <h4>About</h4>
   <p>
-    I am a software engineer on the <b>XR (extended reality)</b> team at <a href="https://www.bucketplace.com/en/" target="_blank">Ohouse</a>, focusing on generative models and 3D to provide value to users.
-     Previouesly, I worked as a research scientist on the <b>generation research</b> team at <a href="https://naver-career.gitbook.io/en/teams/clova-cic/ai-lab" target="_blank">NAVER AI Lab</a>, collaborating with
+    As a <b>software engineer (ML R&D)</b> on the XR team at Ohouse, I specialize in <b>3D vision</b> and <b>generative models</b>. I played a key role in developing <b>AR solutions</b> such as the 'Space Saving' and 'Furniture Removal' features, which enable users to visualize their space with accurately scaled 3D models and experiment with virtual furniture placements. I worked closely with <a target="_blank" href="https://www.linkedin.com/in/hyowonha">Hyowon Ha</a> and <a target="_blank" href="https://www.linkedin.com/in/jaeheung-surh-0a007b24">Jaeheung surh</a> to enhance user experiences in extended reality.
+    Previously, I worked as a <b>research scientist</b> on the <b>generation research</b> team at <a href="https://naver-career.gitbook.io/en/teams/clova-cic/ai-lab" target="_blank">NAVER AI Lab</a>, collaborating with
     <a target="_blank" href="https://github.com/taki0112">Junho Kim</a>, 
     <a target="_blank" href="https://sites.google.com/site/gylee1103">Gayoung Lee</a>, and
     <a target="_blank" href="https://yunjey.github.io">Yunjey Choi</a>, as well as Prof. <a target="_blank" href="https://www.cs.cmu.edu/~junyanz">Jun-Yan Zhu (CMU)</a>.
@@ -17,9 +17,118 @@ title: Home
   </p> 
 </div>
 
+
+<!-- ========== PROJECTS ==========  -->
+<div class="docs-section" id="projects">
+    <h4>🚀 New AR Features in Ohouse: "Space Saving" & "Furniture Removal"! 🚀</h1>
+
+    <p>When purchasing furniture, do you wonder if it will match your space or if the size is right? Try out these new features!</p>
+
+    <div class="feature">
+        <h5>✨ "Space Saving" Feature:</h5>
+        <p>Capture your space, and it will be converted into a <strong>3D model with accurate dimensions</strong>. You can virtually place new furniture to see how it fits.</p>
+    </div>
+
+    <div class="feature">
+        <h5>✨ "Furniture Removal" Feature:</h5>
+        <p>Remove existing furniture <strong>virtually</strong> without physically moving it and visualize your space with new furniture in place.</p>
+    </div>
+
+    <div class="links">
+        <p>🔗 <a href="https://store.ohou.se/exhibitions/12213" target="_blank">Explore AR-compatible furniture</a></p>
+        <p>🔗 <a href="https://ozip.me/88Fr3X9" target="_blank">Meet the Ohouse XR Team</a></p>
+    </div>
+    
+    <h5>📹 Capture:</h5>
+    <div class="video-container">
+      <iframe
+      src="https://www.youtube.com/embed/f8HDBidaDaI" 
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+    </div>
+    
+    <h5 style="margin-top: 30px;">🚀 Demo:</h5>
+    <div class="video-container">
+      <iframe
+      src="https://www.youtube.com/embed/v0ea20ZcqeE" 
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+  
+  </div>
+
+  <!-- <ul class="tab-nav">
+    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
+    <li><div class="button" data-ref="#projects-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="projects-selected">
+      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
+      {% for project in selected_projects %}
+        {% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="{{ project.url }}">
+                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>{{ project.title }}</b> <br/>
+                  {{ project.subtitle }}
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="tab-pane" id="projects-all">
+      {% for project in site.data.projects.projects %}
+        {% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="{{ project.url }}">
+                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>{{ project.title }}</b> <br/>
+                  {{ project.subtitle }}
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div> -->
+
+</div>
+
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
-  <h4>Publications</h4>
+  <h4>Publications (Naver)</h4>
 
   <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
   <sup>‡</sup> indicates equal contribution.
@@ -132,80 +241,7 @@ title: Home
   </div>
 </div>
 
-<!-- ========== PROJECTS ========== 
-<div class="docs-section" id="projects">
-  <h4>Projects</h4>
 
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-all">All</div></li>
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">
-      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
-      {% for project in selected_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="projects-all">
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-</div>
--->
 
 <!-- ========== RESUME ========== -->
 <div class="docs-section" id="resume">
@@ -263,10 +299,4 @@ title: Home
     <a href="https://www.seas.upenn.edu/~elenter/" target="_blank">24</a>,
     <a href="https://cm-bf.github.io/" target="_blank">25</a>,
     <a href="https://stuartburrell.github.io/" target="_blank">26</a>].
-    <!--<br/>-->
-    <!-- You can find all the code needed to build your website in this <a href="https://github.com/msaveski/www_personal" target="_blank">GitHub repo</a>.
-    Feel free to use it. <br/>
-
-    If you end up using it, please link to here and drop me an email.
-    I'm always happy to see people using it. -->
 </div> 
