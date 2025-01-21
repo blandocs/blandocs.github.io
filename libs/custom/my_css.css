@@ -7,12 +7,17 @@ h4 {
   margin-bottom: 60px; 
   text-align: left; }
 .main-description h1 {
-  margin-bottom: 0px; }
+  margin-bottom: 10px; }
 .main-description p {
+  font-size: 17px;
   margin-bottom: 0px; }
 .main-description .fa {
-  font-size: 22px;
+  font-size: 30px;
   margin-top: 5px; }
+.main-description .ai {
+  font-size: 30px; 
+  margin-top: 20px;
+}
 .paper {
   margin-bottom: 20px }
 .paper .title {
