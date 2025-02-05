@@ -1,7 +1,7 @@
 papers:
   - title: "LighthouseGS: Indoor Structure-aware 3D Gaussian Splatting for Panorama-Style
 Mobile Captures"
-    authors: "Seungoh Han, Jaehoon Jang, <b>Hyunsu Kim</b>, Jaeheung Surh, Hyowon Ha<sup>‡</sup>, and Kyungdon
+    authors: "Seungoh Han, Jaehoon Jang, <b>Hyunsu Kim</b>, Jaeheung Surh, Hyowon Ha<sup>‡</sup>, Kyungdon
 Joo<sup>‡</sup>"
     venue: "ACM Transactions on Graphics (TOG), 2025 (Under review)"
     image: "/assets/publications/2025_LighthouseGS/thumb.jpg"
