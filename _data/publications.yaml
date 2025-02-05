@@ -1,4 +1,10 @@
 papers:
+  - title: "LighthouseGS: Indoor Structure-aware 3D Gaussian Splatting for Panorama-Style
+Mobile Captures"
+    authors: "Seungoh Han, Jaehoon Jang, <b>Hyunsu Kim</b>, Jaeheung Surh, Hyowon Ha<sup>‡</sup>, and Kyungdon
+Joo<sup>‡</sup>"
+    venue: "ACM Transactions on Graphics (TOG), 2025 (Under review)"
+    image: "/assets/publications/2025_LighthouseGS/thumb.jpg"
 
   - title: "3D-aware Blending with Generative NeRFs"
     authors: "<b>Hyunsu Kim</b>, Gayoung Lee, Yunjey Choi, Jin-Hwa Kim, Jun-Yan Zhu"

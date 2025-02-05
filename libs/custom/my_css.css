@@ -213,3 +213,25 @@ h4 {
     height: 100%;
     border: none;
 }
+
+@media (max-width: 768px) { /* 모바일 화면일 때 */
+  .row {
+    display: block; /* 기존의 flex 정렬을 해제 */
+    text-align: center; /* 텍스트 중앙 정렬 (선택 사항) */
+  }
+
+  .four .columns {
+    width: 100%;  /* 이미지가 전체 너비를 차지하도록 설정 */
+    margin-bottom: 10px; /* 텍스트와 간격 추가 */
+  }
+  .eight .columns {
+    width: 100%; /* 이미지가 전체 너비를 차지하도록 설정 */
+  }
+}
+
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    align-items: center;
+  }  
+}
