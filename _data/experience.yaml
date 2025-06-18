@@ -1,7 +1,13 @@
 experiences:
 
+- place: "NAVER LABS"
+  time: "Jun 2025 – now"
+  title: "Research engineer"
+  subtitle: "Spatial AI"
+  category: "work"
+  
 - place: "Ohouse"
-  time: "Oct 2023 – now"
+  time: "Oct 2023 – May 2025"
   title: "Software engineer"
   subtitle: "XR (extended reality)"
   category: "work"
