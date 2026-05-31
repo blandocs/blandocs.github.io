@@ -1,9 +1,24 @@
 papers:
+  - title: "GLINT: Modeling Scene-Scale Transparency via Gaussian Radiance Transport"
+    authors: "Youngju Na, Jaeseong Yun, Soohyun Ryu, <b>Hyunsu Kim</b>, Sung-Eui Yoon, Suyong Yeon"
+    venue: "CVPR, 2026 <b style='color: #07c63c;'>(Oral, Award Candidate)</b>"
+    project: "https://youngju-na.github.io/GLINT/"
+    paper_pdf: "https://arxiv.org/abs/2603.26181"
+    code: "https://github.com/youngju-na/GLINT"
+    image: "/assets/publications/2026_GLINT/thumb.png"
+
+  - title: "InSpace: Structure-Aware 3D Indoor Scene Generation from a Single 360° Image"
+    authors: "Gwanhyeong Koo, <b>Hyunsu Kim</b>, Youngji Kim, Taejae Lee, Siwoo Lim, Sunjae Yoon, Suyong Yeon<sup>‡</sup>, Chang D. Yoo<sup>‡</sup>"
+    venue: "Under review"
+    image: "/assets/publications/2026_InSpace/thumb.png"
+
   - title: "LighthouseGS: Indoor Structure-aware 3D Gaussian Splatting for Panorama-Style
 Mobile Captures"
     authors: "Seungoh Han, Jaehoon Jang, <b>Hyunsu Kim</b>, Jaeheung Surh, Hyowon Ha<sup>‡</sup>, Kyungdon
 Joo<sup>‡</sup>"
-    venue: "ACM Transactions on Graphics (TOG), 2025 (Under review)"
+    venue: "WACV, 2026"
+    project: "https://vision3d-lab.github.io/lighthousegs/"
+    paper_pdf: "https://arxiv.org/abs/2507.06109"
     image: "/assets/publications/2025_LighthouseGS/thumb.jpg"
 
   - title: "3D-aware Blending with Generative NeRFs"

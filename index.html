@@ -7,9 +7,13 @@ title: Home
   <h4>About</h4>
   <p>
     I am a <b>3D computer vision research engineer</b> on the <b>Spatial AI</b> team at <a
-      href="https://www.naverlabs.com" target="_blank">NAVER LABS</a>, where I focus on cutting-edge research in
-    <b>3D vision</b> and <b>generative models</b> for spatial understanding and content creation.
-
+      href="https://www.naverlabs.com" target="_blank">NAVER LABS</a>, where I turn real-world captures into detailed,
+    <b>large-scale 3D reconstructions</b> of actual places. I work across the <b>full pipeline</b> — squeezing every bit
+    of quality and scale out of <b>3D reconstruction (Gaussian Splatting)</b> on raw, in-the-wild data, then refining
+    the result with generative models. What drives me most is owning this path end to end, from <b>raw captures to
+      high-quality 3D</b>.
+    <br />
+    <br />
     Previously, I worked as a <b>software engineer (ML R&D)</b> on the XR team at Ohouse, specializing in <b>3D
       vision</b> and <b>generative models</b>. I played a key role in developing <b>AR solutions</b> such as the 'Space
     Saving' and 'Furniture Removal' features, which enable users to visualize their space with accurately scaled 3D
@@ -30,47 +34,47 @@ title: Home
     2021, respectively, where I was advised by Prof. <a href="https://cse.snu.ac.kr/en/professor/sungjoo-yoo"
       target="_blank">Sungjoo Yoo</a> during my Master’s program.
 
-    My product and research interests lie in <b>generative models</b> and <b>3D</b>.
   </p>
 </div>
 
 
 <!-- ========== PROJECTS ==========  -->
 <div class="docs-section" id="projects">
-    <h1>Projects in Ohouse: "Space Saving" & "Furniture Removal"</h1>
+  <h4>Projects in Ohouse: "Space Saving" & "Furniture Removal"</h4>
 
-    <p>When purchasing furniture, do you wonder if it will match your space or if the size is right? Try out these new features!</p>
+  <p>When purchasing furniture, do you wonder if it will match your space or if the size is right? Try out these new
+    features!</p>
 
-    <div class="feature">
-        <h5>✨ "Space Saving" Feature:</h5>
-        <p>Capture your space, and it will be converted into a <strong>3D model with accurate dimensions</strong>. You can virtually place new furniture to see how it fits.</p>
-    </div>
+  <div class="feature">
+    <h5>✨ "Space Saving" Feature:</h5>
+    <p>Capture your space, and it will be converted into a <strong>3D model with accurate dimensions</strong>. You can
+      virtually place new furniture to see how it fits.</p>
+  </div>
 
-    <div class="feature">
-        <h5>✨ "Furniture Removal" Feature:</h5>
-        <p>Remove existing furniture <strong>virtually</strong> without physically moving it and visualize your space with new furniture in place.</p>
-    </div>
+  <div class="feature">
+    <h5>✨ "Furniture Removal" Feature:</h5>
+    <p>Remove existing furniture <strong>virtually</strong> without physically moving it and visualize your space with
+      new furniture in place.</p>
+  </div>
 
-    <div class="links">
-        <p>🔗 <a href="https://store.ohou.se/exhibitions/12213" target="_blank">Explore AR-compatible furniture</a></p>
-        <p>🔗 <a href="https://ozip.me/88Fr3X9" target="_blank">Meet the Ohouse XR Team</a></p>
-    </div>
-    
-    <h5>📹 Capture:</h5>
-    <div class="video-container">
-      <iframe
-      src="https://www.youtube.com/embed/f8HDBidaDaI" 
-      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-      </iframe>
-    </div>
-    
-    <h5 style="margin-top: 30px;">🚀 Demo:</h5>
-    <div class="video-container">
-      <iframe
-      src="https://www.youtube.com/embed/v0ea20ZcqeE" 
-      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-      </iframe>
-  
+  <div class="links">
+    <p>🔗 <a href="https://store.ohou.se/exhibitions/12213" target="_blank">Explore AR-compatible furniture</a></p>
+    <p>🔗 <a href="https://ozip.me/88Fr3X9" target="_blank">Meet the Ohouse XR Team</a></p>
+  </div>
+
+  <h5>📹 Capture:</h5>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/f8HDBidaDaI" frameborder="0" allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <h5 style="margin-top: 30px;">🚀 Demo:</h5>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/v0ea20ZcqeE" frameborder="0" allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+
   </div>
 
   <!-- <ul class="tab-nav">
@@ -147,13 +151,16 @@ title: Home
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
 
-  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
-  <sup>‡</sup> indicates equal contribution.
+  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google
+      Scholar</a>.<br />
+    <sup>‡</sup> indicates equal contribution.
   </p>
 
   <ul class="tab-nav">
     <!-- <li><div class="button active" data-ref="#papers-selected">Selected</div></li> -->
-    <li><div class="button active" data-ref="#papers-all">All</div></li>
+    <li>
+      <div class="button active" data-ref="#papers-all">All</div>
+    </li>
   </ul>
 
   <div class="tab-content">
@@ -223,36 +230,36 @@ title: Home
             <p><i>{{ paper.venue }}</i></p>
             <div class="paper-buttons">
               {% if paper.project %}
-                <a class="button" href="{{ paper.project }}" target="_blank">Project</a>
+              <a class="button" href="{{ paper.project }}" target="_blank">Project</a>
               {% endif %}
 
               {% if paper.paper_pdf %}
-                <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
               {% endif %}
 
               {% if paper.slides %}
-                <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
               {% endif %}
 
               {% if paper.poster %}
-                <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
               {% endif %}
 
               {% if paper.video %}
-                <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
               {% endif %}
 
               {% if paper.code %}
-                <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
               {% endif %}
 
               {% if paper.data %}
-                <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
               {% endif %}
             </div>
           </div>
-          </div>
         </div>
+      </div>
       {% endfor %}
     </div>
   </div>
@@ -272,15 +279,15 @@ title: Home
     <li>
       {% if exp.category == "work" %}
       <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+        {% else %}
+        <div class="direction-r">
+          {% endif %}
+          <div class="flag-wrapper">
+            <span class="flag">{{ exp.place }}</span>
+            <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+          </div>
+          <div class="desc"><b>{{ exp.title }}</b> <br /> {{ exp.subtitle }}</div>
         </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-      </div>
     </li>
     {% endfor %}
   </ul>
