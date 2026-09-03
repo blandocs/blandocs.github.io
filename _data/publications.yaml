@@ -1,9 +1,10 @@
 papers:
   - title: "InSpace: Structure-Aware 3D Indoor Scene Generation from a Single 360° Image"
     authors: "Gwanhyeong Koo, <b>Hyunsu Kim</b>, Youngji Kim, Taejae Lee, Siwoo Lim, Sunjae Yoon, Suyong Yeon<sup>‡</sup>, Chang D. Yoo<sup>‡</sup>"
-    venue: "ECCV, 2026"
+    venue: "ECCV, 2026 <b style='color: #07c63c;'>(Oral)</b>"
     project: "https://kookie12.github.io/InSpace-Project-Page/"
     paper_pdf: "https://arxiv.org/pdf/2607.03990"
+    code: "https://github.com/naver/inspace"
     image: "/assets/publications/2026_InSpace/thumb.png"
 
   - title: "GLINT: Modeling Scene-Scale Transparency via Gaussian Radiance Transport"
